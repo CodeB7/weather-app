@@ -1,0 +1,43 @@
+{
+   "clouds":{
+      "all":20
+   },
+   "name":"Mangalore",
+   "visibility":10000,
+   "sys":{
+      "country":"IN",
+      "type":1,
+      "id":9217,
+      "sunrise":1601686180,
+      "sunset":1601729344
+   },
+   "weather":[
+      {
+         "main":"Clouds",
+         "id":801,
+         "icon":"02d",
+         "description":"few clouds"
+      }
+   ],
+   "coord":{
+      "lat":12.87,
+      "lon":74.88
+   },
+   "base":"stations",
+   "timezone":19800,
+   "dt":1601725549,
+   "main":{
+      "temp":302.15,
+      "temp_max":302.15,
+      "humidity":70,
+      "pressure":1008,
+      "temp_min":302.15,
+      "feels_like":304.85
+   },
+   "id":1263780,
+   "wind":{
+      "speed":3.6,
+      "deg":240
+   },
+   "cod":200
+}

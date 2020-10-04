@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather details</title>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<style type="text/css">
+		body {
+				background-image: linear-gradient(#18CDC2, #000000);
+				margin-bottom: 220px;
+			}
+
+		hr {
+			margin-top: -5px;
+			border-color: orange;
+			border-width: 4px;
+		}
+	</style>
+</head>
+<body>
+	<div class="weather-details-title">
+		<br/>
+		<h1 class="weather-details-text">Weather Details</h1>
+	</div>
+	
+<hr/>
+<div style="margin-left: 150px;">
+	<h3 class="city-county">{{city}}, {{country}}</h3>
+	<p id="date"></p>
+	<script>
+		var d = new Date();
+		var weekday = new Array(7);
+		weekday[0] = "Sunday";
+		weekday[1] = "Monday";
+		weekday[2] = "Tuesday";
+		weekday[3] = "Wednesday";
+		weekday[4] = "Thursday";
+		weekday[5] = "Friday";
+		weekday[6] = "Saturday";
+
+		var n = weekday[d.getDay()];
+		document.getElementById("date").innerHTML = n + ', ' + d.toLocaleString('en-US', { hour: 'numeric', hour12: true });
+	</script>	
+</div>
+
+<center>
+	<img src="../static/images/weather.png" class="weather-details-img">
+<div>
+	<table border=1 cellpadding=9 cellspacing=7>
+		<tr>
+			<td class="td-orange">Temp</td>
+			<td class="td-white">{{temp}} &deg;C</td>
+		</tr>
+		<tr>
+			<td class="td-orange">Temp Min</td>
+			<td class="td-white">{{temp_min}} &deg;C</td>
+		</tr>
+		<tr>
+			<td class="td-orange">Temp Max</td>
+			<td class="td-white">{{temp_max}} &deg;C</td>
+		</tr>
+		<tr>
+			<td class="td-orange">Humidity</td>
+			<td class="td-white">{{humidity}} %</td>
+		</tr>
+		<tr>
+			<td class="td-orange">Pressure</td>
+			<td class="td-white">{{pressure}} hpa</td>
+		</tr>
+		<tr>
+			<td class="td-orange">Wind Speed</td>
+			<td class="td-white">{{wind}} mph</td>
+		</tr>
+	</table>
+</div>
+<div style="margin-left: -80px;">
+	<p style="color: white; font-size: 20px;">See one more response?</p>
+	<a style="margin-left: -120px;" href="/"><button class="fa fa-home home-button"></button></a>	
+</div>
+</center>
+</body>
+</html>

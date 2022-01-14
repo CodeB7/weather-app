@@ -4,7 +4,7 @@ body {
 	margin-bottom: 240px;
 }
 
-hr {
+.hr-top {
 	margin-top: -20px;
 	border-color: orange;
 	border-width: 4px;
@@ -143,4 +143,17 @@ tr {
 	font-size: 50px;
 	background-color: black;
 	color: orange;
+}
+
+.copyright {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.copyright-text {
+    font-size: 25px;
 }

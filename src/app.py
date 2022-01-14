@@ -43,9 +43,9 @@ def get_weather_details(city_name):
 	weather_details = api_response_dict["main"]
 
 	# Convert from Kelvin to Celsius
-	temp = weather_details['temp'] - 273.15
-	temp_min = weather_details['temp_max'] - 273.15
-	temp_max = weather_details['temp_max'] - 273.15
+	temp = round(weather_details['temp'] - 273.15, 2)
+	temp_min = round(weather_details['temp_max'] - 273.15, 2)
+	temp_max = round(weather_details['temp_max'] - 273.15, 2)
 	humidity = weather_details['humidity']
 	pressure = weather_details['pressure']
 	weather_description = api_response_dict['weather'][0]['description']

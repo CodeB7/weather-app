@@ -9,7 +9,7 @@
 </head>
 <body>
 <center><h1 class="title-bar">Weather API Demo</h1></center>
-<hr/>
+<hr class="hr-top" />
 <br/><br/><br/><br/><br/>
 	<div style="text-align: center;">
 		<div class="text-div">
@@ -43,5 +43,14 @@
 			</div>
 		</div>
 </div>
+
+<div class="copyright">
+	<hr style="border-top: 1px solid black;"/>
+	<p class="copyright-text">&copy; copyright Weather App <span class="copyright-text" id="copyrightYear"></span></p>
+</div>
+<script type = "text/javascript">
+         var dt = new Date();
+         document.getElementById("copyrightYear").textContent = dt.getFullYear();
+</script>
 </body>
 </html>
